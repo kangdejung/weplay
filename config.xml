@@ -7,14 +7,24 @@
     <author email="barun5458@naver.com" href="http://www.weplays.co.kr/">
         Weplay Team
     </author>
-	<preference name="AutoHideSplashScreen" value="false" />
-	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="SplashScreenDelay" value="5000" />
+	<preference name="SplashScreen" value="screen"/>
 	<preference name="android-minSdkVersion" value="15" />
 	<preference name="fullscreen" value="true" />
 
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />
+	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+	
 	<splash src="splash.jpg" />
+	<platform name="android">  
+		<splash src="splash.png" qualifier="ldpi"/>  
+		<splash src="splash.png" qualifier="mdpi"/>  
+		<splash src="splash.png" qualifier="hdpi"/>  
+		<splash src="splash.png" qualifier="xhdpi"/>  
+		<splash src="splash.png" qualifier="xxhdpi"/>  
+	</platform>
 
 	<allow-navigation href="*" />
 	<icon src="icon.png" />
