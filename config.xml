@@ -17,7 +17,7 @@
 	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />
 	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 	
-	<splash src="splash.jpg" />
+	<splash src="splash.png" />
 	<platform name="android">  
 		<splash src="splash.png" qualifier="ldpi"/>  
 		<splash src="splash.png" qualifier="mdpi"/>  
